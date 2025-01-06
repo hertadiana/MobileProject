@@ -47,7 +47,7 @@ export function EarningInput() {
         [type, parseInt(sum, 10), date, mentions]
       );
       Alert.alert("Success", "Earning Added");
-      navigation.replace("Earnings");
+      navigation.navigate("Earnings");
     } catch (error) {
       console.error("Error adding earning:", error);
       Alert.alert("Error", "Failed to add earning");
